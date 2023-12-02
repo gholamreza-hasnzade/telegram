@@ -1,5 +1,5 @@
 // * Import Casual modules
-import React, { FC } from "react";
+import { FC } from "react";
 
 // * Import Tools
 import { ThemeProvider as MUIThemeProvider } from "@mui/material/styles";

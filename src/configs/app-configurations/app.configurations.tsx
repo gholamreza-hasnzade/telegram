@@ -7,11 +7,12 @@ import { IAppConfigurations } from "@configs/app-configurations/app.configuratio
 
 import { EmotionConfig } from "@configs/app-configurations/emotion/emotion.config";
 import { BaseStylesConfig } from "@configs/app-configurations/base-styles/base-styles.config";
+import { MaterialUIConfig } from "@configs/app-configurations/material-ui/material-ui.config";
 export const AppConfigurations: FC<IAppConfigurations> = ({ children }) => {
     return (
-        <>
+        <MaterialUIConfig>
             <BaseStylesConfig />
             <EmotionConfig>{children}</EmotionConfig>
-        </>
+        </MaterialUIConfig>
     );
 };

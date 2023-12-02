@@ -1,5 +1,12 @@
-function App() {
-    return <div>React + Vite</div>;
-}
+// * import config
+import { AppConfigurations } from "@configs/app-configurations/app.configurations";
 
-export default App;
+export const App = () => {
+    return (
+        <>
+            <AppConfigurations>
+                <h1>Reza</h1>
+            </AppConfigurations>
+        </>
+    );
+};
