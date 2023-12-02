@@ -4,6 +4,14 @@ import { FC } from "react";
  */
 // * Import interfase
 import { IAppConfigurations } from "@configs/app-configurations/app.configurations.interfaces";
-export const AppConfigurations: FC<IAppConfigurations> = () => {
-    return <div>AppConfigurations</div>;
+
+import { EmotionConfig } from "@configs/app-configurations/emotion/emotion.config";
+import { BaseStylesConfig } from "@configs/app-configurations/base-styles/base-styles.config";
+export const AppConfigurations: FC<IAppConfigurations> = ({ children }) => {
+    return (
+        <>
+            <BaseStylesConfig />
+            <EmotionConfig>{children}</EmotionConfig>
+        </>
+    );
 };

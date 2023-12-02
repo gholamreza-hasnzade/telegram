@@ -1,0 +1,18 @@
+// * Import Casual modules
+import React, { FC } from "react";
+
+// * Import Tools
+import { ThemeProvider as MUIThemeProvider } from "@mui/material/styles";
+
+// * import interFaces
+import { IMaterialUIProvider } from "@configs/app-configurations/material-ui/material-ui.config.interfaces";
+//* import theme
+import { MATERIAL_UI_THEME_CONFIG } from "@configs/app-configurations/material-ui/material-ui.config.theme";
+
+export const MaterialUIConfig: FC<IMaterialUIProvider> = ({ children }) => {
+    return (
+        <MUIThemeProvider theme={MATERIAL_UI_THEME_CONFIG}>
+            {children}
+        </MUIThemeProvider>
+    );
+};
