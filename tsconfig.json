@@ -22,6 +22,7 @@
         "baseUrl": "./src",
         "paths": {
             "@components/*": ["components/*"],
+            "@constants/*": ["constants/*"],
             "@configs/*": ["configs/*"]
             // Add more aliases as needed
         }
