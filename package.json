@@ -28,7 +28,6 @@
     "stylis-plugin-rtl": "^2.1.1"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.23.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@types/jest": "^29.5.10",
     "@types/react": "^18.2.37",
