@@ -1,7 +1,8 @@
-import React from 'react'
+// * Import Casual modules
+import { FC } from "react";
 
-export const AppConfigurations = () => {
-  return (
-    <div>AppConfigurations</div>
-  )
-}
+// * Import interfase
+import { IAppConfigurations } from "@configs/app-configurations/app.configurations.interfaces";
+export const AppConfigurations: FC<IAppConfigurations> = () => {
+    return <div>AppConfigurations</div>;
+};
