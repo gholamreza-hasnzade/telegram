@@ -31,15 +31,6 @@ export const AppRouteConfig = () => {
             element: <LoginView />,
         },
         {
-            path: "/",
-            element: "Home",
-            index: true,
-        },
-        {
-            path: "/about",
-            element: "About",
-        },
-        {
             path: "*",
             element: <h1>Not Found</h1>,
         },
