@@ -1,34 +1,24 @@
-// * components/views
-import { LoginView } from "@components/views/Auth";
-
 // * Import Tools
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-/* const router = createBrowserRouter([
-    {
-      element: "HeaderLayout" ,
-      children: [
-        {
-          path: "/",
-          element: <h1>Hello</h1>,
-        },
-        {
-          path: '/foo',
-          element: <div>foo</div>,
-        },
-        {
-          path: '/bar',
-          element: <h1>foo</h1>,
-        }
-      ],
-    },
-  ]);
- */
+// * components/views
+import { AuthLayout } from "@components/templates";
+import { LoginView, VerifyView } from "@components/views/Auth";
+
 export const AppRouteConfig = () => {
     const router = createBrowserRouter([
         {
-            path: "/login",
-            element: <LoginView />,
+            element: <AuthLayout />,
+            children: [
+                {
+                    path: "/login",
+                    element: <LoginView />,
+                },
+                {
+                    path: "/Verify",
+                    element: <VerifyView />,
+                },
+            ],
         },
         {
             path: "*",

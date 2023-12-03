@@ -1,0 +1,1 @@
+export { AuthLayoutComponent as AuthLayout } from "@components/templates/layouts/authLayout/authLayout.component"
