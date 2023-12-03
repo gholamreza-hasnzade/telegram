@@ -1,0 +1,1 @@
+export { ButtonConponent as Button } from "@components/atoms/button/button.conponent"
