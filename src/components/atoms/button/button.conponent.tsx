@@ -8,12 +8,13 @@ import { ButtonComponentStyle as S } from "@components/atoms/button/button.conpo
 import { IButton } from "@components/atoms/button/button.conponent.interfaces";
 
 export const ButtonConponent: FC<IButton> = ({
+    id,
     children,
     variant,
     onClick,
 }) => {
     return (
-        <S.Button variant={variant} onClick={onClick}>
+        <S.Button id={id} variant={variant} onClick={onClick}>
             {children}
         </S.Button>
     );

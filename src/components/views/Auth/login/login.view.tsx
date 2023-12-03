@@ -1,14 +1,11 @@
 /* import React from 'react' */
 
-import { Button } from "@components/atoms";
+import { TextField } from "@components/atoms";
 
 export const LoginView = () => {
-
     return (
         <div>
-            <Button variant="contained">
-                login
-            </Button>
+            <TextField label="test" placeholder="test" variant="outlined" type="password" />
         </div>
     );
 };
