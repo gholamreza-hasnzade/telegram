@@ -9,7 +9,9 @@ export const BaseStylesConfigReset = css`
         margin: 0;
         box-sizing: border-box;
     }
-
+    html {
+        font-size: 10px;
+    }
     html,
     body,
     div,
@@ -82,6 +84,10 @@ export const BaseStylesConfigReset = css`
     }
     body {
         line-height: 1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
     ol,
     ul {

@@ -1,0 +1,1 @@
+export { LoginView } from "@components/views/Auth/login/login.view"

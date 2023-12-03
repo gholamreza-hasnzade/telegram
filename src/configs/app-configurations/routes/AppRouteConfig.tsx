@@ -1,3 +1,7 @@
+// * components/views
+import { LoginView } from "@components/views/Auth";
+
+// * Import Tools
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /* const router = createBrowserRouter([
@@ -22,6 +26,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
  */
 export const AppRouteConfig = () => {
     const router = createBrowserRouter([
+        {
+            path: "/login",
+            element: <LoginView />,
+        },
         {
             path: "/",
             element: "Home",
