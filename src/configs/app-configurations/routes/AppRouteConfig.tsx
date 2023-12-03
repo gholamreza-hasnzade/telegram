@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // * components/views
 import { AuthLayout } from "@components/templates";
-import { LoginView, VerifyView } from "@components/views/Auth";
+import { SignUpView, VerifyView } from "@components/views/Auth";
 
 export const AppRouteConfig = () => {
     const router = createBrowserRouter([
@@ -11,8 +11,8 @@ export const AppRouteConfig = () => {
             element: <AuthLayout />,
             children: [
                 {
-                    path: "/login",
-                    element: <LoginView />,
+                    path: "/signup",
+                    element: <SignUpView />,
                 },
                 {
                     path: "/Verify",

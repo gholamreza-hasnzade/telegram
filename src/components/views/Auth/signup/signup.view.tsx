@@ -1,5 +1,5 @@
 /* import React from 'react' */
 
-export const LoginView = () => {
+export const SignUpView = () => {
     return <div>LoginView</div>;
 };
