@@ -9,7 +9,7 @@ const Header = styled(Box)`
     flex-direction: column;
     width: 100%;
     height: 90px;
-    background-color: ${({ theme }) => theme.TEXT_PRIMARY};
+    background-color: ${({ theme }) => theme.PRIMARY};
 `;
 
 export const HeaderOrganismStyle = {
