@@ -5,5 +5,7 @@ export interface IButtonAtom {
     id?: string
     children?: ReactNode,
     variant?: "text" | "outlined" | "contained",
-    onClick?: () => void
+    onClick?: () => void,
+    startIcon?: string,
+    endIcon?: string
 }

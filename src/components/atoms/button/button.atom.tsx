@@ -11,10 +11,18 @@ export const ButtonAtom: FC<IButtonAtom> = ({
     id,
     children,
     variant,
+    startIcon,
+    endIcon,
     onClick,
 }) => {
     return (
-        <S.Button id={id} variant={variant} onClick={onClick}>
+        <S.Button
+            id={id}
+            variant={variant}
+            onClick={onClick}
+            startIcon={startIcon}
+            endIcon={endIcon}
+        >
             {children}
         </S.Button>
     );
