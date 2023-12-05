@@ -1,1 +1,1 @@
-export { HeaderOrganism } from "@components/organisms/header/header.organism"
+export { HeaderOrganism } from "@components/organisms/header/header.organism";

@@ -3,7 +3,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'; */
 export const HomeView = () => {
     return (
         <div>
-          {/*   <IconButtonAtom >
+            HomeView
+            {/*   <IconButtonAtom >
                 <IconAtom component={AccessTimeIcon}/>
             </IconButtonAtom> */}
         </div>
