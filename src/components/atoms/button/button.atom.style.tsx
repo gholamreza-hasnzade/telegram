@@ -5,6 +5,6 @@ import { Button as ButtonMUI } from "@mui/material";
 const Button = styled(ButtonMUI)`
    
 `;
-export const ButtonComponentStyle = {
+export const ButtonAtomStyle = {
     Button,
 };
