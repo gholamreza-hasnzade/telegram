@@ -2,12 +2,12 @@
 import { FC } from "react";
 
 // * import style
-import { TextFieldComponentStyle as S } from "@components/atoms/textfield/textfield.component.style";
+import { TextFieldAtomStyle as S } from "@components/atoms/textfield/textfield.atom.style";
 
 // * import interfaces
-import { ITextField } from "@components/atoms/textfield/textfield.component.interfaces";
+import { ITextFieldAtom } from "@components/atoms/textfield/textfield.atom.interfaces";
 
-export const TextFieldComponent: FC<ITextField> = ({
+export const TextFieldAtom: FC<ITextFieldAtom> = ({
     id,
     name,
     label,

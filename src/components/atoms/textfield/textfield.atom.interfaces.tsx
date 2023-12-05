@@ -1,4 +1,4 @@
-export interface ITextField {
+export interface ITextFieldAtom {
     id?: string;
     name?: string;
     label?: string;
