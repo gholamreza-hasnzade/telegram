@@ -5,7 +5,7 @@ import  { FC } from "react";
 import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 
 // * import interfaces
-import { IEmotionConfig } from "@configs/app-configurations/emotion/emotion.config.interfaces";
+import { IEmotionConfig } from "@configs/app-configurations/emotion/emotion.config.interface";
 
 // * import constants
 import { THEME_LIGHT } from "@constants/themes";

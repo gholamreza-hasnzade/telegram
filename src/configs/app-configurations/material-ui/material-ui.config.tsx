@@ -5,7 +5,7 @@ import { FC } from "react";
 import { ThemeProvider as MUIThemeProvider } from "@mui/material/styles";
 
 // * import interFaces
-import { IMaterialUIProvider } from "@configs/app-configurations/material-ui/material-ui.config.interfaces";
+import { IMaterialUIProvider } from "@configs/app-configurations/material-ui/material-ui.config.interface";
 //* import theme
 import { MATERIAL_UI_THEME_CONFIG } from "@configs/app-configurations/material-ui/material-ui.config.theme";
 

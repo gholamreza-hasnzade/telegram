@@ -5,7 +5,7 @@ import { FC } from "react";
 import { ButtonAtomStyle as S } from "@components/atoms/button/button.atom.style";
 
 // * interfaces
-import { IButtonAtom } from "@components/atoms/button/button.atom.interfaces";
+import { IButtonAtom } from "@components/atoms/button/button.atom.interface";
 
 export const ButtonAtom: FC<IButtonAtom> = ({
     id,

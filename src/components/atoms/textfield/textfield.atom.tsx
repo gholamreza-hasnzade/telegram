@@ -5,7 +5,7 @@ import { FC } from "react";
 import { TextFieldAtomStyle as S } from "@components/atoms/textfield/textfield.atom.style";
 
 // * import interfaces
-import { ITextFieldAtom } from "@components/atoms/textfield/textfield.atom.interfaces";
+import { ITextFieldAtom } from "@components/atoms/textfield/textfield.atom.interface";
 
 export const TextFieldAtom: FC<ITextFieldAtom> = ({
     id,
