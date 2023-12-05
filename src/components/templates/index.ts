@@ -1,1 +1,2 @@
-export { AuthLayoutComponent as AuthLayout } from "@components/templates/layouts/authLayout/authLayout.component"
+export { AuthLayoutComponent as AuthLayout } from "@components/templates/layouts/authLayout/authLayout.component";
+export { MainLayoutComponent as MainLayout } from "@components/templates/layouts/mainLayout/mainLayout.component"

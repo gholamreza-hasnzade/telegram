@@ -1,0 +1,10 @@
+// * import tools
+import { Outlet } from "react-router-dom";
+
+export const MainLayoutComponent = () => {
+  return (
+    <div>
+        <Outlet />
+    </div>
+  )
+}
