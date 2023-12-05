@@ -3,8 +3,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // * components/templates
 import { AuthLayout, MainLayout } from "@components/templates";
+
 // * components/views
 import { SignInView, SignUpView, VerifyView } from "@components/views/Auth";
+import { HomeView } from "@components/views/general";
 
 export const AppRouteConfig = () => {
     const router = createBrowserRouter([
@@ -30,7 +32,7 @@ export const AppRouteConfig = () => {
             children: [
                 {
                     path: "/",
-                    element: <h1>Hoem</h1>,
+                    element: <HomeView />,
                 },
             ],
         },
