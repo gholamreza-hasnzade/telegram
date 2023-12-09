@@ -8,7 +8,7 @@ const Header = styled(Box)`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90px;
+    height: 12%;
     background-color: ${({ theme }) => theme.PRIMARY};
 `;
 

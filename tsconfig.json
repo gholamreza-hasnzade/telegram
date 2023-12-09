@@ -27,19 +27,15 @@
             "@configs/*": ["configs/*"]
             // Add more aliases as needed
         },
-        "typeRoots": [
-            "node_modules/@types",
-             "node_modules"
-         ],
-         "types": [
-             "node", "jest", "lodash", "react",
-             "react-dom", "react-redux", "redux-logger", "material-ui",
-             "react-router-dom", "react-router-redux",
-             "redux", "binary-type-tree", "redux-form",
-             "tedb", "react-tap-event-plugin",
-             "react-hot-loader", "material-ui-icons"
-         ],
-         "outDir": "dist"
+        "typeRoots": ["node_modules/@types", "node_modules"],
+        "types": [
+            "node",
+            "jest",
+            "react",
+            "react-dom",
+            "react-router-dom",
+        ],
+        "outDir": "dist"
     },
     "include": [
         "src",

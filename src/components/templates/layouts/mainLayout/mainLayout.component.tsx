@@ -1,4 +1,5 @@
 // * import tools
+import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 
 // * import organisms
@@ -11,9 +12,9 @@ export const MainLayoutComponent = () => {
     return (
         <S.Container>
             <HeaderOrganism />
-            <div>
+            <Fragment>
                 <Outlet />
-            </div>
+            </Fragment>
         </S.Container>
     );
 };
