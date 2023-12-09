@@ -1,6 +1,6 @@
 // * Import Interfaces
 import { ReactNode } from "react";
 
-export interface IAppBar {
+export interface ITopAppBar {
     children?: ReactNode;
 }

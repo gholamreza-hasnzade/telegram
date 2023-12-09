@@ -10,6 +10,6 @@ const Appbar = styled(BoxMUI)`
     background-color: ${({ theme }) => theme.PRIMARY};
 `;
 
-export const AppbarMoleculeStyle = {
+export const TopAppbarMoleculeStyle = {
     Appbar,
 };
