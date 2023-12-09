@@ -4,8 +4,6 @@ export const HeaderOrganism = () => {
     return (
         <S.Header>
             <div>1</div>
-            <div>1</div>
-            <div>1</div>
         </S.Header>
     );
 };

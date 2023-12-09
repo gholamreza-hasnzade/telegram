@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { Drawer as DrawerMUI } from "@mui/material";
 
 // * import interface
-import { IDrawerStyle } from "@components/atoms/drawer/drawer.atom.interface";
+import { IDrawerStyle } from "@components/molecules/drawer/drawer.molecule.interface";
 
 const Drawer = styled(DrawerMUI)<IDrawerStyle>`
     & .MuiDrawer-paper {
@@ -11,6 +11,6 @@ const Drawer = styled(DrawerMUI)<IDrawerStyle>`
         width: ${({ drawerwidth }) => drawerwidth ? `${drawerwidth}px` : "250px"};
     }
 `;
-export const DrawerAtomStyle = {
+export const DrawerMoleculeStyle = {
     Drawer,
 };
