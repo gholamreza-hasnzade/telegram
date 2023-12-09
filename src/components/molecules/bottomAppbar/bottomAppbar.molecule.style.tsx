@@ -2,12 +2,12 @@
 import styled from "@emotion/styled";
 import { Box as BoxMUI } from "@mui/material";
 
-const TopAppbar = styled(BoxMUI)`
+const BottomAppbar = styled(BoxMUI)`
     display: flex;
     flex-direction: column;
    
 `;
 
-export const TopAppbarMoleculeStyle = {
-    TopAppbar,
+export const BottomAppbarMoleculeStyle = {
+    BottomAppbar,
 };

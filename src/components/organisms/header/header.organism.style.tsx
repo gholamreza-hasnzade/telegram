@@ -6,7 +6,9 @@ import { Box } from "@mui/material";
 
 const Header = styled(Box)`
     width: 100%;
-    height: 100%;
+    height: 12%;
+    width: 100%;
+    background-color: ${({ theme }) => theme.PRIMARY};
 `;
 
 export const HeaderOrganismStyle = {

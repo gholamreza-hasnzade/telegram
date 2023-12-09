@@ -7,5 +7,5 @@ import { TopAppbarMoleculeStyle as S } from "@components/molecules/topAppbar/top
 import { ITopAppbarMolecule } from "@components/molecules/topAppbar/topAppbar.molecule.interface";
 
 export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({ children }) => {
-    return <S.Appbar>{children}</S.Appbar>;
+    return <S.TopAppbar>{children}</S.TopAppbar>;
 };
