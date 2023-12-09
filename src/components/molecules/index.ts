@@ -1,1 +1,1 @@
-export { AppbarAtom } from "@components/molecules/appbar/topAppbar.molecule"
+export { TopAppbarMolecule } from "@components/molecules/topAppbar/topAppbar.molecule"

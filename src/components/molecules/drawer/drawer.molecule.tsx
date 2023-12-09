@@ -1,12 +1,12 @@
 import { FC } from "react";
 
 // * import interface
-import { IDrawer } from "@components/molecules/drawer/drawer.molecule.interface";
+import { IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.interface";
 
 // * import style
 import { DrawerMoleculeStyle as S } from "@components/molecules/drawer/drawer.molecule.style";
 
-export const DrawerAtom: FC<IDrawer> = ({
+export const DrawerMolecule: FC<IDrawerMolecule> = ({
     children,
     isOpen,
     handleDrawerToggle,

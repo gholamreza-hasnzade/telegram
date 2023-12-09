@@ -1,7 +1,7 @@
 // * Import Interfaces
 import { ReactNode } from "react";
 
-export interface IDrawer {
+export interface IDrawerMolecule {
     children?: ReactNode;
     drawerwidth?: number;
     handleDrawerToggle?: () => void,
@@ -9,6 +9,6 @@ export interface IDrawer {
     variant?: 'permanent' | 'persistent' | 'temporary'
 }
 
-export interface IDrawerStyle {
+export interface IDrawerMoleculeStyle {
     drawerwidth?: number;
 }
