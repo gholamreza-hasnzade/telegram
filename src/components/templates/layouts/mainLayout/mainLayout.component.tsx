@@ -6,11 +6,15 @@ import { Outlet } from "react-router-dom";
 import { HeaderOrganism } from "@components/organisms";
 // * import
 import { MainLayoutStyle as S } from "@components/templates/layouts/mainLayout/mainLayout.component.style";
+import { AppbarAtom } from "@components/molecules";
 
 export const MainLayoutComponent = () => {
     return (
         <S.Container>
-            <HeaderOrganism />
+            <AppbarAtom>
+                <HeaderOrganism />
+            </AppbarAtom>
+
             <Fragment>
                 <Outlet />
             </Fragment>

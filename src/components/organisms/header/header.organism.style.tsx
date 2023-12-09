@@ -5,11 +5,8 @@ import { Box } from "@mui/material";
 // * import interface
 
 const Header = styled(Box)`
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 12%;
-    background-color: ${({ theme }) => theme.PRIMARY};
+    height: 100%;
 `;
 
 export const HeaderOrganismStyle = {
