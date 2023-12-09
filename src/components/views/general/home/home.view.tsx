@@ -1,12 +1,12 @@
-/* import { IconAtom, IconButtonAtom } from "@components/atoms";
-import AccessTimeIcon from '@mui/icons-material/AccessTime'; */
+
+// * import components
+import { SectionAtom } from "@components/atoms";
+
 export const HomeView = () => {
     return (
-        <div>
+        <SectionAtom>
             HomeView
-            {/*   <IconButtonAtom >
-                <IconAtom component={AccessTimeIcon}/>
-            </IconButtonAtom> */}
-        </div>
+           
+        </SectionAtom>
     );
 };

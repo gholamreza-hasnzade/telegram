@@ -1,6 +1,3 @@
-
 export const VerifyView = () => {
-  return (
-    <div>VerifyView</div>
-  )
-}
+    return <div>VerifyView</div>;
+};
