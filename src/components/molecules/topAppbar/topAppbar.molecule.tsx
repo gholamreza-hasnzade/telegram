@@ -32,7 +32,7 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({ children }) => {
                         <IconAtom component={MenuIcon} />
                     </IconButtonAtom>
                     <ImageAvatar height={25} width={25} />
-                    <TypographyAtom color={"white"}>
+                    <TypographyAtom>
                         Waiting for network ...
                     </TypographyAtom>
                 </FlexboxAtom>

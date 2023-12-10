@@ -1,8 +1,8 @@
 // * Import Interfaces
-/* import { ReactNode } from "react"; */
-import { TypographyProps } from "@mui/material/Typography";
+import { ReactNode } from "react";
 
-export interface ITypographyAtom extends TypographyProps {
+export interface ITypographyAtom  {
     // * your interface
-    color?: string;
+    fontSize?: number,
+    children?: ReactNode;
 }
