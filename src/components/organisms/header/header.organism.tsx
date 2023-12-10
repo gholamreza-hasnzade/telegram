@@ -11,7 +11,9 @@ import { BottomAppbarMolecule, TopAppbarMolecule } from "@components/molecules";
 export const HeaderOrganism: FC<IHeaderOrganism> = () => {
     return (
         <S.Header>
-            <TopAppbarMolecule>TopAppbarMolecule</TopAppbarMolecule>
+            <TopAppbarMolecule>
+                
+            </TopAppbarMolecule>
             <BottomAppbarMolecule>BottomAppbarMolecule</BottomAppbarMolecule>
         </S.Header>
     );
