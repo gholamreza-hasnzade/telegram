@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, Fragment } from "react";
 
 // * import style
 import { TopAppbarMoleculeStyle as S } from "@components/molecules/topAppbar/topAppbar.molecule.style";
@@ -18,41 +18,63 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import { DrawerMolecule } from "../drawer/drawer.molecule";
 
-export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({ children }) => {
+export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
+    children,
+    isOpen,
+    handleDrawerToggle,
+}) => {
     return (
-        <S.TopAppbar>
-            <FlexboxAtom
-                alignItems="center"
-                flexDirection="row"
-                justifyContent="space-between"
-            >
-                <FlexboxAtom flexDirection="row" alignItems="center" gap={12}>
-                    <IconButtonAtom size="small" color="white">
-                        <IconAtom component={MenuIcon} />
-                    </IconButtonAtom>
-                    <ImageAvatar height={25} width={25} />
-                    <TypographyAtom>
-                        Waiting for network ...
-                    </TypographyAtom>
-                </FlexboxAtom>
-                <FlexboxAtom flexDirection="row" alignItems="center" gap={12}>
-                    <IconButtonAtom
-                        size="small"
-                        color="white"
-                        ariaLabel={"Search Icon"}
+        <Fragment>
+            <S.TopAppbar>
+                <FlexboxAtom
+                    alignItems="center"
+                    flexDirection="row"
+                    justifyContent="space-between"
+                >
+                    <FlexboxAtom
+                        flexDirection="row"
+                        alignItems="center"
+                        gap={12}
                     >
-                        <IconAtom component={VerifiedUserIcon} />
-                    </IconButtonAtom>
-                    <IconButtonAtom
-                        size="small"
-                        color="white"
-                        ariaLabel={"Search Icon"}
+                        <IconButtonAtom
+                            size="small"
+                            color="white"
+                            onClick={handleDrawerToggle}
+                        >
+                            <IconAtom component={MenuIcon} />
+                        </IconButtonAtom>
+                        <ImageAvatar height={25} width={25} />
+                        <TypographyAtom>Waiting for network ...</TypographyAtom>
+                    </FlexboxAtom>
+                    <FlexboxAtom
+                        flexDirection="row"
+                        alignItems="center"
+                        gap={12}
                     >
-                        <IconAtom component={SearchIcon} />
-                    </IconButtonAtom>
+                        <IconButtonAtom
+                            size="small"
+                            color="white"
+                            ariaLabel={"Search Icon"}
+                        >
+                            <IconAtom component={VerifiedUserIcon} />
+                        </IconButtonAtom>
+                        <IconButtonAtom
+                            size="small"
+                            color="white"
+                            ariaLabel={"Search Icon"}
+                        >
+                            <IconAtom component={SearchIcon} />
+                        </IconButtonAtom>
+                    </FlexboxAtom>
                 </FlexboxAtom>
-            </FlexboxAtom>
-        </S.TopAppbar>
+            </S.TopAppbar>
+
+            <DrawerMolecule
+                isOpen={isOpen}
+                handleDrawerToggle={handleDrawerToggle}
+            />
+        </Fragment>
     );
 };

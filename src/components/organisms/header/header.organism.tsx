@@ -1,5 +1,5 @@
 // * import tools
-import { FC } from "react";
+import { FC, useState } from "react";
 
 // * import style
 import { HeaderOrganismStyle as S } from "@components/organisms/header/header.organism.style";
@@ -9,9 +9,18 @@ import { IHeaderOrganism } from "@components/organisms/header/header.organism.in
 import { BottomAppbarMolecule, TopAppbarMolecule } from "@components/molecules";
 
 export const HeaderOrganism: FC<IHeaderOrganism> = () => {
+    
+    const [isOpen, setisOpen] = useState<boolean>(false);
+
+    const handleDrawerToggle = () => {
+        setisOpen(!isOpen);
+    };
     return (
         <S.Header>
-            <TopAppbarMolecule />
+            <TopAppbarMolecule
+                isOpen={isOpen}
+                handleDrawerToggle={handleDrawerToggle}
+            />
 
             <BottomAppbarMolecule>BottomAppbarMolecule</BottomAppbarMolecule>
         </S.Header>
