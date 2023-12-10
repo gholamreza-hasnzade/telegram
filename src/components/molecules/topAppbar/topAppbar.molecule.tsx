@@ -15,10 +15,11 @@ import {
     TypographyAtom,
 } from "@components/atoms";
 
-import SearchIcon from "@mui/icons-material/Search";
-import MenuIcon from "@mui/icons-material/Menu";
-import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
-import { DrawerMolecule } from "../drawer/drawer.molecule";
+// * import components/molecules
+import { DrawerMolecule } from "@components/molecules/drawer/drawer.molecule";
+
+// * import assets
+import { SearchIcon, VerifiedUserIcon, MenuIcon } from "@assets/muiIcons";
 
 export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
     children,
