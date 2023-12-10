@@ -6,6 +6,9 @@ import { TypographyAtomStyle as S } from "@components/atoms/typography/typograph
 
 // * import interface
 import { ITypographyAtom } from "@components/atoms/typography/typography.atom.interface";
-export const TypographyAtom: FC<ITypographyAtom> = (  props ) => {
-    return <S.Typography {...props} />;
+export const TypographyAtom: FC<ITypographyAtom> = (props) => {
+    const { color } = props;
+    console.log(color);
+    
+    return <S.Typography color="primary" {...props} />;
 };

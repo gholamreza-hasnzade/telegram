@@ -7,7 +7,13 @@ import { TopAppbarMoleculeStyle as S } from "@components/molecules/topAppbar/top
 import { ITopAppbarMolecule } from "@components/molecules/topAppbar/topAppbar.molecule.interface";
 
 // * import components/atoms
-import { FlexboxAtom, IconAtom, IconButtonAtom } from "@components/atoms";
+import {
+    FlexboxAtom,
+    IconAtom,
+    IconButtonAtom,
+    ImageAvatar,
+    TypographyAtom,
+} from "@components/atoms";
 
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -25,7 +31,10 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({ children }) => {
                     <IconButtonAtom size="small" color="white">
                         <IconAtom component={MenuIcon} />
                     </IconButtonAtom>
-                    <div>1</div>
+                    <ImageAvatar height={25} width={25} />
+                    <TypographyAtom color={"white"}>
+                        Waiting for network ...
+                    </TypographyAtom>
                 </FlexboxAtom>
                 <FlexboxAtom flexDirection="row" alignItems="center" gap={12}>
                     <IconButtonAtom
