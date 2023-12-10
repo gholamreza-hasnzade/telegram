@@ -12,9 +12,15 @@ export const IconButtonAtom: FC<IIconButtonAtom> = ({
     ariaLabel,
     size,
     onClick,
+    color,
 }) => {
     return (
-        <IconButton aria-label={ariaLabel} size={size} onClick={onClick}>
+        <IconButton
+            color={color}
+            aria-label={ariaLabel}
+            size={size}
+            onClick={onClick}
+        >
             {children}
         </IconButton>
     );

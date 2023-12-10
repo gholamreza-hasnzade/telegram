@@ -11,7 +11,8 @@ export const FlexboxAtom: FC<IFlexBox> = ({
     alignItems,
     flexDirection,
     justifyContent,
-    gap,
+    gap = 0,
+    width,
 }) => {
     return (
         <S.FlexBox
@@ -19,6 +20,7 @@ export const FlexboxAtom: FC<IFlexBox> = ({
             flexDirection={flexDirection}
             justifyContent={justifyContent}
             gap={gap}
+            width={width}
         >
             {children}
         </S.FlexBox>

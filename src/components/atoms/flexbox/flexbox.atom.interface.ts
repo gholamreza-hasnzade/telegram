@@ -9,6 +9,7 @@ export interface IFlexBox {
     justifyContent?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     alignItems?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     gap?: number;
+    width? : number;
 }
 
 export interface IFlexBoxStyle {
@@ -16,4 +17,5 @@ export interface IFlexBoxStyle {
     justifyContent?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     alignItems?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     gap?: number;
+    width? : number;
 }
