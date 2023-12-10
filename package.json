@@ -26,7 +26,8 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
     "react-router-dom": "^6.20.1",
-    "stylis": "^4.3.0"
+    "stylis": "^4.3.0",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",

@@ -72,6 +72,7 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
             </S.TopAppbar>
 
             <DrawerMolecule
+                drawerwidth={310}
                 isOpen={isOpen}
                 handleDrawerToggle={handleDrawerToggle}
             />
