@@ -7,7 +7,6 @@ export interface ITheme {
     TEXT_SECONDARY: string,
     TEXT: string,
     TITLE: string,
-    light: string
     /*  PRIMARY_PALE: string,
      SUCCESS: string, */
 }
