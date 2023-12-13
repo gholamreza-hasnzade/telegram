@@ -22,9 +22,6 @@ export const MATERIAL_UI_THEME_CONFIG: Theme = createTheme({
 
     },
     palette: {
-        /*  common: {
-             white: createColor(THEME_LIGHT.WHITE).main
-         }, */
         primary: {
             main: createColor(THEME_LIGHT.PRIMARY).main,
             light: createColor(THEME_LIGHT.PRIMARY).light,
@@ -68,6 +65,6 @@ export const MATERIAL_UI_THEME_CONFIG: Theme = createTheme({
                     color: createColor(THEME_LIGHT.WHITE).main
                 },
             }
-        }
+        },
     },
 });
