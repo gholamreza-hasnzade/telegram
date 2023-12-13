@@ -20,6 +20,7 @@ import { DrawerMolecule } from "@components/molecules/drawer/drawer.molecule";
 
 // * import assets
 import { SearchIcon, VerifiedUserIcon, MenuIcon } from "@assets/muiIcons";
+import { Box, Button } from "@mui/material";
 
 export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
     children,
@@ -39,9 +40,9 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
                         alignItems="center"
                         gap={12}
                     >
+                        <Box sx={{ bgcolor: `primary.light`, width: 40, height: 20 }} />
                         <IconButtonAtom
                             size="small"
-                            color="white"
                             onClick={handleDrawerToggle}
                         >
                             <IconAtom component={MenuIcon} />
@@ -56,14 +57,14 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
                     >
                         <IconButtonAtom
                             size="small"
-                            color="white"
+                            color="primary.main"
                             ariaLabel={"Search Icon"}
                         >
                             <IconAtom component={VerifiedUserIcon} />
                         </IconButtonAtom>
                         <IconButtonAtom
                             size="small"
-                            color="white"
+                            color="primary.main"
                             ariaLabel={"Search Icon"}
                         >
                             <IconAtom component={SearchIcon} />

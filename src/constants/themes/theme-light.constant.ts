@@ -1,4 +1,5 @@
 import { ITheme } from "@constants/themes/theme.constant.interface"
+import { rgba } from "polished";
 
 const BASE_COLORS = {
     WHITE: '#ffffff',
@@ -8,7 +9,15 @@ const BASE_COLORS = {
 
 const SYSTEM_THEME_COLORS = {
     PRIMARY: "#0088CC",
-    SECONDARY: "#179CDE"
+    SECONDARY: "#179CDE",
+   /*  SUCCESS: '#10B981', */
+}
+
+
+const SYSTEM_THEME_COLORS_PALE = {
+    PRIMARY_PALE: rgba(SYSTEM_THEME_COLORS.PRIMARY, 0.2),
+
+    /* SUCCESS_PALE: rgba(SYSTEM_THEME_COLORS.SUCCESS, 0.2), */
 }
 
 const TYPOGRAPHY_COLORS = {
@@ -26,5 +35,6 @@ const TYPOGRAPHY_COLORS = {
 export const THEME_LIGHT: ITheme = {
     ...BASE_COLORS,
     ...SYSTEM_THEME_COLORS,
-    ...TYPOGRAPHY_COLORS
+    ...TYPOGRAPHY_COLORS,
+    ...SYSTEM_THEME_COLORS_PALE
 };
