@@ -10,8 +10,7 @@ const { palette: { augmentColor } } = createTheme();
 const createColor = (mainColor: string) => augmentColor({ color: { main: mainColor } })
 
 
-/* console.log(createColor(THEME_LIGHT.SECONDARY));
- */
+
 
 export const MATERIAL_UI_THEME_CONFIG: Theme = createTheme({
     direction: 'ltr',
@@ -23,19 +22,24 @@ export const MATERIAL_UI_THEME_CONFIG: Theme = createTheme({
 
     },
     palette: {
+        /*  common: {
+             white: createColor(THEME_LIGHT.WHITE).main
+         }, */
         primary: {
             main: createColor(THEME_LIGHT.PRIMARY).main,
             light: createColor(THEME_LIGHT.PRIMARY).light,
             dark: createColor(THEME_LIGHT.PRIMARY).dark,
             contrastText: createColor(THEME_LIGHT.PRIMARY).dark,
         },
-        secondary:{
+        secondary: {
             main: createColor(THEME_LIGHT.SECONDARY).main,
             light: createColor(THEME_LIGHT.SECONDARY).light,
             dark: createColor(THEME_LIGHT.SECONDARY).dark,
             contrastText: createColor(THEME_LIGHT.SECONDARY).dark,
-        }
+        },
+
     },
+
     components: {
         // Name of the component
         MuiButton: {
@@ -53,6 +57,16 @@ export const MATERIAL_UI_THEME_CONFIG: Theme = createTheme({
                     fontFamily: "Roboto",
                     width: "100%",
                 }
+            }
+        },
+        MuiIconButton: {
+            styleOverrides: {
+                colorPrimary: {
+                    color: createColor(THEME_LIGHT.PRIMARY).main
+                },
+                colorInherit: {
+                    color: createColor(THEME_LIGHT.WHITE).main
+                },
             }
         }
     },
