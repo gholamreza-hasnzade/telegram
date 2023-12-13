@@ -12,7 +12,8 @@ const FlexBox = styled(BoxMUI)<IFlexBoxStyle>`
     justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
     align-items: ${({ alignItems }) => alignItems || "stretch"};
     gap: ${({ gap }) => `${gap}px` || "0px"};
-    width: ${({ width }) => `${width}px` || "unset"};
+    width: ${({ width }) => `${width}%` || "unset"};
+    height: ${({ height }) => `${height}%` || "unset"};
 `;
 
 export const FlexboxAtomStyle = {

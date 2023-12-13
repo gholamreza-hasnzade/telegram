@@ -10,7 +10,7 @@ import { BottomAppbarMolecule, TopAppbarMolecule } from "@components/molecules";
 
 export const HeaderOrganism: FC<IHeaderOrganism> = () => {
     
-    const [isOpen, setisOpen] = useState<boolean>(false);
+    const [isOpen, setisOpen] = useState<boolean>(true);
 
     const handleDrawerToggle = () => {
         setisOpen(!isOpen);

@@ -9,8 +9,10 @@ const Drawer = styled(DrawerMUI)<IDrawerMolecule>`
     & .MuiDrawer-paper {
         box-sizing: border-box;
         width: ${({ drawerwidth }) => drawerwidth ? `${drawerwidth}px` : "250px"};
+        display: flex;
     }
 `;
+
 export const DrawerMoleculeStyle = {
     Drawer,
 };

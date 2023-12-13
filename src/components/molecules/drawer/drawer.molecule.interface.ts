@@ -1,8 +1,8 @@
 // * Import Interfaces
-import { ReactNode } from "react";
+/* import { ReactNode } from "react"; */
 
 export interface IDrawerMolecule {
-    children?: ReactNode;
+    /* children?: ReactNode; */
     drawerwidth?: number;
     handleDrawerToggle?: () => void,
     isOpen?: boolean;

@@ -42,7 +42,7 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
             >
               <IconAtom component={MenuIcon} />
             </IconButtonAtom>
-            <ImageAvatar height={25} width={25} />
+            <ImageAvatar height={35} width={35} />
             <TypographyAtom>Telegram</TypographyAtom>
           </FlexboxAtom>
           <FlexboxAtom flexDirection="row" alignItems="center" gap={12}>

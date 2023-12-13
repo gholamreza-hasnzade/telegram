@@ -10,6 +10,7 @@ export interface IFlexBox {
     alignItems?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     gap?: number;
     width? : number;
+    height?: number;
 }
 
 export interface IFlexBoxStyle {
@@ -18,4 +19,5 @@ export interface IFlexBoxStyle {
     alignItems?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
     gap?: number;
     width? : number;
+    height?: number;
 }

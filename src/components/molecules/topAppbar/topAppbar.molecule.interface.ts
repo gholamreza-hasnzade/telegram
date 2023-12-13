@@ -1,8 +1,8 @@
 // * Import Interfaces
-import { ReactNode } from "react";
+/* import { ReactNode } from "react"; */
 
 export interface ITopAppbarMolecule {
-    children?: ReactNode;
+    /* children?: ReactNode; */
     isOpen?: boolean;
     handleDrawerToggle?: () => void;
 }
