@@ -1,4 +1,5 @@
-import { IThemeLight } from "@constants/themes/theme.constant.interface"
+import { IThemeDark } from "@constants/themes/theme.constant.interface"
+import { rgba } from "polished";
 
 const BASE_COLORS = {
     WHITE: '#ffffff',
@@ -11,7 +12,6 @@ const SYSTEM_THEME_COLORS = {
 }
 
 
-
 const TYPOGRAPHY_COLORS = {
     TEXT_PRIMARY: "#0088CC",
     TEXT_SECONDARY: "#179CDE",
@@ -19,7 +19,7 @@ const TYPOGRAPHY_COLORS = {
     TITLE: "#8C8C8C"
 }
 
-export const THEME_LIGHT: IThemeLight = {
+export const THEME_DARK: IThemeDark = {
     ...BASE_COLORS,
     ...SYSTEM_THEME_COLORS,
     ...TYPOGRAPHY_COLORS,
