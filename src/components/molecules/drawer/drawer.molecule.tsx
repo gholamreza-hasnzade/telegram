@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { useTheme } from "@emotion/react";
 
 // * import interface
 import { IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.interface";
@@ -21,6 +22,8 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
   drawerwidth,
   variant = "temporary",
 }) => {
+  const { TITLE } = useTheme();
+
   return (
     <S.Drawer
       variant={variant}
@@ -29,9 +32,6 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
       onClose={handleDrawerToggle}
       ModalProps={{
         keepMounted: true, // Better open performance on mobile.
-      }}
-      sx={{
-        display: { xs: "block", sm: "none" },
       }}
     >
       <FlexboxAtom flexDirection="column" width={100} height={100}>
@@ -48,10 +48,10 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
           </S.AppBarDrawerRow>
           <S.AppBarDrawerRow>
             <FlexboxAtom flexDirection="column" width={80}>
-              <TypographyAtom  fontWeight={500}>
+              <TypographyAtom fontWeight={500}>
                 Gholamreza.hassanzadeh
               </TypographyAtom>
-              <TypographyAtom fontWeight={100} fontSize={12}>
+              <TypographyAtom color={`${TITLE}`} fontWeight={100} fontSize={12}>
                 +98 936 978 0985
               </TypographyAtom>
             </FlexboxAtom>

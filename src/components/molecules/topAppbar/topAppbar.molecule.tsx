@@ -25,7 +25,7 @@ export const TopAppbarMolecule: FC<ITopAppbarMolecule> = ({
  /*  children, */
   isOpen,
   handleDrawerToggle,
-}) => {
+}) => {  
   return (
     <Fragment>
       <S.TopAppbar>

@@ -6,17 +6,21 @@ const BASE_COLORS = {
 };
 
 const SYSTEM_THEME_COLORS = {
-    PRIMARY: "#0088CC",
-    SECONDARY: "#179CDE",
+    PRIMARY: "#5a8fbb",
+    SECONDARY: "#229ED9",
+    ERROR: "#d32f2f",
+    WARNING: "#ed6c02",
+    INFO: "#0288d1",
+    SUCCESS: "#2e7d32"
 }
 
 
-
 const TYPOGRAPHY_COLORS = {
-    TEXT_PRIMARY: "#0088CC",
-    TEXT_SECONDARY: "#179CDE",
-    TEXT: "#333333",
-    TITLE: "#8C8C8C"
+    TEXT_WHITE: '#ffffff',
+    TEXT_PRIMARY: "#5a8fbb",
+    TEXT_SECONDARY: "#229ED9",
+    TEXT: "#b9def8",
+    TITLE: "#b9def8"
 }
 
 export const THEME_LIGHT: IThemeLight = {
