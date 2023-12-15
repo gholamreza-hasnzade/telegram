@@ -16,11 +16,12 @@ const SYSTEM_THEME_COLORS = {
 
 
 const TYPOGRAPHY_COLORS = {
-    TEXT_WHITE: '#ffffff',
+    TEXT_WHITE: '#fbffff',
+    TEXT_BLACK: '##474747',
     TEXT_PRIMARY: "#5a8fbb",
     TEXT_SECONDARY: "#229ED9",
     TEXT: "#b9def8",
-    TITLE: "#b9def8"
+    TITLE: "#b1d9f5"
 }
 
 export const THEME_LIGHT: IThemeLight = {

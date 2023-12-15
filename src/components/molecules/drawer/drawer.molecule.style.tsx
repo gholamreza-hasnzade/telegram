@@ -1,9 +1,10 @@
 // * Import Tools
 import styled from "@emotion/styled";
-import { Box as BoxMUI, Drawer as DrawerMUI } from "@mui/material";
+import { Box as BoxMUI, Button, Drawer as DrawerMUI } from "@mui/material";
 
 // * import interface
 import { IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.interface";
+import { ButtonAtom } from "@components/atoms";
 
 const Drawer = styled(DrawerMUI)<IDrawerMolecule>`
   & .MuiDrawer-paper {
@@ -16,7 +17,7 @@ const AppBarDrawer = styled(BoxMUI)`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 20%;
+  /* height: 20%; */
   background-color: ${({ theme }) => theme.PRIMARY};
   padding: 16px;
   gap: 16px;
@@ -26,12 +27,19 @@ const AppBarDrawerRow = styled(BoxMUI)`
   justify-content: space-between;
   width: 100%;
   align-items: center;
- /*  &:not(:last-child) {
-    margin-bottom: 16px;
-  } */
 `;
+const AppBarProfileRow = styled(BoxMUI)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f6f6f6;
+`;
+
 export const DrawerMoleculeStyle = {
   Drawer,
   AppBarDrawer,
   AppBarDrawerRow,
+  AppBarProfileRow,
 };

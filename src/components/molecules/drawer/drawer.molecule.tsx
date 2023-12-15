@@ -7,13 +7,25 @@ import { IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.in
 // * import style
 import { DrawerMoleculeStyle as S } from "@components/molecules/drawer/drawer.molecule.style";
 import {
+  ButtonAtom,
   FlexboxAtom,
   IconAtom,
   IconButtonAtom,
   ImageAvatar,
   TypographyAtom,
 } from "@components/atoms";
-import { ModeNightIcon, KeyboardArrowDownIcon } from "@assets/muiIcons";
+import {
+  ModeNightIcon,
+  KeyboardArrowDownIcon,
+  AddOutlinedIcon,
+  PeopleOutlineIcon,
+  PersonOutlineIcon,PhoneOutlinedIcon,
+  AccessibilityNewOutlinedIcon,
+  BookmarkBorderOutlinedIcon,
+  SettingsOutlinedIcon,
+  PersonAddAltIcon,
+  HelpOutlineIcon
+} from "@assets/muiIcons";
 
 export const DrawerMolecule: FC<IDrawerMolecule> = ({
   /* children, */
@@ -22,8 +34,8 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
   drawerwidth,
   variant = "temporary",
 }) => {
-  const { TITLE } = useTheme();
-
+  const { TEXT_WHITE, TITLE, TEXT_BLACK } = useTheme();
+  
   return (
     <S.Drawer
       variant={variant}
@@ -48,10 +60,14 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
           </S.AppBarDrawerRow>
           <S.AppBarDrawerRow>
             <FlexboxAtom flexDirection="column" width={80}>
-              <TypographyAtom fontWeight={500}>
+              <TypographyAtom
+                color={`${TEXT_WHITE}`}
+                fontWeight={600}
+                fontSize={14}
+              >
                 Gholamreza.hassanzadeh
               </TypographyAtom>
-              <TypographyAtom color={`${TITLE}`} fontWeight={100} fontSize={12}>
+              <TypographyAtom color={`${TITLE}`} fontWeight={500} fontSize={12}>
                 +98 936 978 0985
               </TypographyAtom>
             </FlexboxAtom>
@@ -64,8 +80,113 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
             </IconButtonAtom>
           </S.AppBarDrawerRow>
         </S.AppBarDrawer>
-        <div>1</div>
-        <div>1</div>
+        <S.AppBarProfileRow>
+          <ButtonAtom variant="text">
+            <ImageAvatar height={30} width={30} />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Gholamreza.hassanzadeh
+            </TypographyAtom>
+          </ButtonAtom>
+
+          <ButtonAtom variant="text">
+            <IconAtom component={AddOutlinedIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Add Account
+            </TypographyAtom>
+          </ButtonAtom>
+        </S.AppBarProfileRow>
+
+        <S.AppBarProfileRow>
+          <ButtonAtom variant="text">
+            <IconAtom component={PeopleOutlineIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              New Group
+            </TypographyAtom>
+          </ButtonAtom>
+          <ButtonAtom variant="text">
+            <IconAtom component={PersonOutlineIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Contacts
+            </TypographyAtom>
+          </ButtonAtom>
+          <ButtonAtom variant="text">
+            <IconAtom component={PhoneOutlinedIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Calls
+            </TypographyAtom>
+          </ButtonAtom>
+          <ButtonAtom variant="text">
+            <IconAtom component={AccessibilityNewOutlinedIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              People Nearby
+            </TypographyAtom>
+          </ButtonAtom>
+          <ButtonAtom variant="text">
+            <IconAtom component={BookmarkBorderOutlinedIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Saved Messages
+            </TypographyAtom>
+          </ButtonAtom>
+
+          <ButtonAtom variant="text">
+            <IconAtom component={SettingsOutlinedIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Setting
+            </TypographyAtom>
+          </ButtonAtom>
+        </S.AppBarProfileRow>
+        <ButtonAtom variant="text">
+            <IconAtom component={PersonAddAltIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Invite Friends
+            </TypographyAtom>
+          </ButtonAtom>
+          <ButtonAtom variant="text">
+            <IconAtom component={HelpOutlineIcon} fontSize="medium" />
+            <TypographyAtom
+              color={`${TEXT_BLACK}`}
+              fontWeight={400}
+              fontSize={10}
+            >
+              Tekegram Fearures
+            </TypographyAtom>
+          </ButtonAtom>
       </FlexboxAtom>
     </S.Drawer>
   );
