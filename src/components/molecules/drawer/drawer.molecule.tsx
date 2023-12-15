@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { useTheme } from "@emotion/react";
 
 // * import interface
@@ -19,12 +19,14 @@ import {
   KeyboardArrowDownIcon,
   AddOutlinedIcon,
   PeopleOutlineIcon,
-  PersonOutlineIcon,PhoneOutlinedIcon,
+  PersonOutlineIcon,
+  PhoneOutlinedIcon,
   AccessibilityNewOutlinedIcon,
   BookmarkBorderOutlinedIcon,
   SettingsOutlinedIcon,
   PersonAddAltIcon,
-  HelpOutlineIcon
+  HelpOutlineIcon,
+  ExpandLessIcon,
 } from "@assets/muiIcons";
 
 export const DrawerMolecule: FC<IDrawerMolecule> = ({
@@ -35,7 +37,13 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
   variant = "temporary",
 }) => {
   const { TEXT_WHITE, TITLE, TEXT_BLACK } = useTheme();
-  
+
+  const [isopenprofiletop, setIsOpenProfileTop] = useState<boolean>(false);
+
+  const handleDrawerPofileTop = () => {
+    setIsOpenProfileTop(!isopenprofiletop);
+  };
+
   return (
     <S.Drawer
       variant={variant}
@@ -72,15 +80,21 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
               </TypographyAtom>
             </FlexboxAtom>
             <IconButtonAtom
+              onClick={handleDrawerPofileTop}
               size="medium"
               color="inherit"
               ariaLabel={"KeyboardArrow"}
             >
-              <IconAtom component={KeyboardArrowDownIcon} fontSize="medium" />
+              {isopenprofiletop ? (
+                <IconAtom component={ExpandLessIcon} fontSize="medium" />
+              ) : (
+                <IconAtom component={KeyboardArrowDownIcon} fontSize="medium" />
+              )}
             </IconButtonAtom>
           </S.AppBarDrawerRow>
         </S.AppBarDrawer>
-        <S.AppBarProfileRow>
+
+        <S.AppBarProfileRow className={isopenprofiletop ? "visible" : "hidden"}>
           <ButtonAtom variant="text">
             <ImageAvatar height={30} width={30} />
             <TypographyAtom
@@ -136,7 +150,10 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
             </TypographyAtom>
           </ButtonAtom>
           <ButtonAtom variant="text">
-            <IconAtom component={AccessibilityNewOutlinedIcon} fontSize="medium" />
+            <IconAtom
+              component={AccessibilityNewOutlinedIcon}
+              fontSize="medium"
+            />
             <TypographyAtom
               color={`${TEXT_BLACK}`}
               fontWeight={400}
@@ -146,7 +163,10 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
             </TypographyAtom>
           </ButtonAtom>
           <ButtonAtom variant="text">
-            <IconAtom component={BookmarkBorderOutlinedIcon} fontSize="medium" />
+            <IconAtom
+              component={BookmarkBorderOutlinedIcon}
+              fontSize="medium"
+            />
             <TypographyAtom
               color={`${TEXT_BLACK}`}
               fontWeight={400}
@@ -168,25 +188,25 @@ export const DrawerMolecule: FC<IDrawerMolecule> = ({
           </ButtonAtom>
         </S.AppBarProfileRow>
         <ButtonAtom variant="text">
-            <IconAtom component={PersonAddAltIcon} fontSize="medium" />
-            <TypographyAtom
-              color={`${TEXT_BLACK}`}
-              fontWeight={400}
-              fontSize={10}
-            >
-              Invite Friends
-            </TypographyAtom>
-          </ButtonAtom>
-          <ButtonAtom variant="text">
-            <IconAtom component={HelpOutlineIcon} fontSize="medium" />
-            <TypographyAtom
-              color={`${TEXT_BLACK}`}
-              fontWeight={400}
-              fontSize={10}
-            >
-              Tekegram Fearures
-            </TypographyAtom>
-          </ButtonAtom>
+          <IconAtom component={PersonAddAltIcon} fontSize="medium" />
+          <TypographyAtom
+            color={`${TEXT_BLACK}`}
+            fontWeight={400}
+            fontSize={10}
+          >
+            Invite Friends
+          </TypographyAtom>
+        </ButtonAtom>
+        <ButtonAtom variant="text">
+          <IconAtom component={HelpOutlineIcon} fontSize="medium" />
+          <TypographyAtom
+            color={`${TEXT_BLACK}`}
+            fontWeight={400}
+            fontSize={10}
+          >
+            Tekegram Fearures
+          </TypographyAtom>
+        </ButtonAtom>
       </FlexboxAtom>
     </S.Drawer>
   );

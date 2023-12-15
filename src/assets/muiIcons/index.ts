@@ -12,6 +12,7 @@ import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlin
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 export {
     SearchIcon,
     MenuIcon,
@@ -26,5 +27,6 @@ export {
     BookmarkBorderOutlinedIcon,
     SettingsOutlinedIcon,
     PersonAddAltIcon,
-    HelpOutlineIcon
+    HelpOutlineIcon,
+    ExpandLessIcon
 }

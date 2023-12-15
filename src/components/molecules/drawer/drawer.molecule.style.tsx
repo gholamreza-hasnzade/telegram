@@ -1,10 +1,9 @@
 // * Import Tools
 import styled from "@emotion/styled";
-import { Box as BoxMUI, Button, Drawer as DrawerMUI } from "@mui/material";
+import { Box as BoxMUI, Drawer as DrawerMUI } from "@mui/material";
 
 // * import interface
-import { IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.interface";
-import { ButtonAtom } from "@components/atoms";
+import {  IDrawerMolecule } from "@components/molecules/drawer/drawer.molecule.interface";
 
 const Drawer = styled(DrawerMUI)<IDrawerMolecule>`
   & .MuiDrawer-paper {
@@ -29,12 +28,21 @@ const AppBarDrawerRow = styled(BoxMUI)`
   align-items: center;
 `;
 const AppBarProfileRow = styled(BoxMUI)`
-  display: flex;
   flex-direction: column;
   width: 100%;
   gap: 8px;
   padding: 8px 0;
   border-bottom: 1px solid #f6f6f6;
+  transition: opacity 0.5s ease-in-out;
+  &.visible{
+    display: flex;
+    opacity: 1;
+  }
+  &.hidden{
+    opacity: 0;
+    display: none;
+  }
+  
 `;
 
 export const DrawerMoleculeStyle = {
