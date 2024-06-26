@@ -30,7 +30,7 @@
       "@/configs/*": ["./src/configs/*"],
       "@/constants/*": ["./src/constants/*"],
       "@/service/*": ["./src/service/*"],
-      "@/utils/*": ["u./src/tils/*"],
+      "@/utils/*": ["u./src/utils/*"],
       "@/hooks/*": ["./src/hooks/*"]
     },
   },
