@@ -1,5 +1,6 @@
 // * Import tools
 import { FC } from "react";
+
 // * Import interfase
 import { IAppConfigurations } from "@/configs/app-configurations/app.configurations.interface";
 
@@ -7,6 +8,10 @@ import { IAppConfigurations } from "@/configs/app-configurations/app.configurati
 import { EmotionConfig } from "@/configs/app-configurations/emotion/emotion.config";
 import { BaseStylesConfig } from "@/configs/app-configurations/base-styles/base-styles.config";
 import { MaterialUIConfig } from "@/configs/app-configurations/mui/material-ui";
+
+// * i18next
+import "@/configs/app-configurations/i18next/i18n";
+
 
 export const AppConfigurations: FC<IAppConfigurations> = ({ children }) => {
   return (
