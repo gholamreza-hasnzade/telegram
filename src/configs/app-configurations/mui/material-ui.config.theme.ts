@@ -12,12 +12,12 @@ const { palette: { augmentColor } } = createTheme();
 
 
 export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
-    direction: 'rtl',
+   /*  direction: 'rtl', */
     typography: {
-        fontFamily: 'IRANSans',
-        allVariants: {
+        fontFamily: 'Roboto',
+       /*  allVariants: {
             textAlign: "right"
-        },
+        }, */
         button: {
             fontSize: '1rem',
         }
